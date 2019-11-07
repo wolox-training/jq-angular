@@ -3,8 +3,16 @@ $gray : #828282;
 .book {
   display: flex;
   font-family: 'Roboto', sans-serif;
+  flex-direction: row;
+  padding: 18px;
+}
+
+.info {
   flex-direction: column;
-  padding: 15px;
+}
+
+.image {
+  padding: 12px 52px 0 0;
 }
 
 .row {
@@ -37,4 +45,10 @@ $gray : #828282;
 .description {
   color: $gray;
   padding: 0 8px;
+}
+
+.book-cover {
+  height: 368px;
+  width: 261px;
+  flex-direction: row;
 }
