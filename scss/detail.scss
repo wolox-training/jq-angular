@@ -1,0 +1,40 @@
+$gray : #828282;
+
+.book {
+  padding: 15px;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+}
+
+.row {
+  padding: 18px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  flex-direction: row;
+}
+
+.gender {
+  color: $gray;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.author,
+.editorial,
+.year,
+.description {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.description {
+  color: $gray;
+  padding: 0 8px;
+}
