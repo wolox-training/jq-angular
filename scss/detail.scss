@@ -1,40 +1,39 @@
 $gray : #828282;
 
-.book {
+.book-container {
   display: flex;
   font-family: 'Roboto', sans-serif;
-  flex-direction: column;
   padding: 15px;
 }
 
-.row {
-  padding: 18px 0;
-  display: flex;
-  flex-direction: row;
+.column {
+  flex-direction: column;
 }
 
-.title {
+.row {
+  display: flex;
+}
+
+.book-title {
   font-size: 32px;
   font-weight: bold;
   flex-direction: row;
 }
 
-.gender {
+.book-gender {
   color: $gray;
   font-size: 24px;
   font-weight: bold;
-  padding: 0 8px;
+  padding: 0 0 18px 8px;
 }
 
-.author,
-.editorial,
-.year,
-.description {
-  font-size: 20px;
-  line-height: 24px;
+.book-author,
+.book-editorial,
+.book-year,
+.book-description {
+  padding: 18px 0;
 }
 
-.description {
-  color: $gray;
-  padding: 0 8px;
+.book-description {
+  padding: 18px 8px;
 }
