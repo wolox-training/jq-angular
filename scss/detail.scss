@@ -1,12 +1,10 @@
-$gray : #828282;
-
 .book-container {
-  display: flex;
   font-family: 'Roboto', sans-serif;
   padding: 15px;
 }
 
 .column {
+  display: flex;
   flex-direction: column;
 }
 
@@ -17,23 +15,22 @@ $gray : #828282;
 .book-title {
   font-size: 32px;
   font-weight: bold;
-  flex-direction: row;
 }
 
 .book-gender {
   color: $gray;
   font-size: 24px;
   font-weight: bold;
-  padding: 0 0 18px 8px;
+  margin-left: 8px;
+  padding: 0 0 18px 0;
 }
 
-.book-author,
-.book-editorial,
-.book-year,
+.book-property,
 .book-description {
   padding: 18px 0;
 }
 
 .book-description {
-  padding: 18px 8px;
+  margin-left: 8px;
+  padding: 18px 0;
 }
