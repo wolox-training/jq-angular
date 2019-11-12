@@ -3,7 +3,7 @@
   -webkit-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
   box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
   font-family: 'Roboto', sans-serif;
-  padding: 15px;
+  padding: 24px;
   height: 416px;
   width: 900px;
 }
@@ -14,6 +14,7 @@
 }
 
 .book-image {
+  position: relative;
   margin-right: 52px;
 }
 
@@ -51,4 +52,16 @@
 .book-separator {
   width: 540px;
   border-bottom: 4px solid $earls-green;
+}
+
+.book-badge {
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  bottom: 276px;
+  transform: rotate(15deg);
+  left: 210px;
+  position: absolute;
+  right: 0;
+  height: 110px;
+  width: 72px;
 }
