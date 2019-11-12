@@ -1,6 +1,11 @@
 .book-container {
+  background-color: $white;
+  -webkit-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
   font-family: 'Roboto', sans-serif;
   padding: 15px;
+  height: 416px;
+  width: 900px;
 }
 
 .column {
@@ -19,7 +24,7 @@
 .book-title {
   font-size: 32px;
   font-weight: bold;
-  margin-right: 8px;
+  margin: 0 8px 12px 0;
   line-height: 38px;
 }
 
@@ -41,4 +46,9 @@
 .book-cover {
   height: 368px;
   width: 261px;
+}
+
+.book-separator {
+  width: 540px;
+  border-bottom: 4px solid $earls-green;
 }
