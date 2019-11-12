@@ -1,11 +1,11 @@
 .book-container {
   background-color: $white;
-  -webkit-box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
-  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  -webkit-box-shadow: 4px 4px 10px 0 $black-05;
+  box-shadow: 4px 4px 10px 0 $black-05;
   font-family: 'Roboto', sans-serif;
+  max-width: 900px;
   padding: 24px;
-  height: 416px;
-  width: 900px;
+  width: 100%;
 }
 
 .column {
@@ -16,6 +16,10 @@
 .book-image {
   position: relative;
   margin-right: 52px;
+}
+
+.book-info {
+  width: 100%;
 }
 
 .row {
@@ -46,11 +50,11 @@
 
 .book-cover {
   height: 368px;
-  width: 261px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .book-separator {
-  width: 540px;
   border-bottom: 4px solid $earls-green;
 }
 
