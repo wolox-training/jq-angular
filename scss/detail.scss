@@ -14,7 +14,6 @@
 }
 
 .book-image {
-  position: relative;
   margin-right: 52px;
 }
 
@@ -49,6 +48,7 @@
 }
 
 .book-cover {
+  position: relative;
   height: 368px;
   max-width: 400px;
   width: 100%;
@@ -58,14 +58,21 @@
   border-bottom: 4px solid $earls-green;
 }
 
-.book-badge {
+.book-image-container {
+  &::after {
   -ms-transform: rotate(15deg);
   -webkit-transform: rotate(15deg);
-  bottom: 276px;
+  background: url('../assets/badge.png');
+  background-repeat: no-repeat;
+  background-position: 1px;
+  background-size: 100%;
+  bottom: 830px;
+  content: '';
   transform: rotate(15deg);
-  left: 210px;
   position: absolute;
-  right: 0;
-  height: 110px;
   width: 72px;
+  height: 110px;
+  left: 620px;
+  z-index: 1;
+  }
 }
