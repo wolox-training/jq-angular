@@ -1,6 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: $white;
+  border-top: solid 6px $cerulean;
+  width: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.nav-logo-image {
+  height: 70px;
+  width: 212px;
+}
+
+.logout {
+  margin-right: 100px;
+}
+
 .books-container {
   flex-wrap: wrap;
   max-width: 1000px;
+  padding-top: 36px;
   width: 100%;
 }
 
