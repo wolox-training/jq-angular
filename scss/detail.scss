@@ -4,7 +4,7 @@
   box-shadow: 4px 4px 10px 0 $black-05;
   font-family: 'Roboto', sans-serif;
   max-width: 900px;
-  padding: 15px;
+  padding: 24px;
   width: 100%;
 }
 
@@ -48,6 +48,7 @@
 }
 
 .book-cover {
+  position: relative;
   height: 368px;
   max-width: 400px;
   width: 100%;
@@ -55,4 +56,21 @@
 
 .book-separator {
   border-bottom: 4px solid $earls-green;
+}
+
+.book-image-container {
+  &::after {
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  background: url('../assets/badge.png') no-repeat;
+  background-size: 100%;
+  bottom: calc(100% - 115px);
+  content: '';
+  transform: rotate(15deg);
+  height: 110px;
+  left: calc(100% - 1050px);
+  position: absolute;
+  width: 72px;
+  z-index: 1;
+  }
 }
