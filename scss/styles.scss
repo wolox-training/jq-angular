@@ -4,3 +4,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.shadow-container {
+  -webkit-box-shadow: 4px 4px 10px 0 $black-05;
+  box-shadow: 4px 4px 10px 0 $black-05;
+}
