@@ -1,11 +1,12 @@
-.body {
+.main {
+  align-items: flex-start;
   background-color: $wild-sand;
   display: flex;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
 }
 
-.shadow-container {
+.shadow {
   -webkit-box-shadow: 4px 4px 10px 0 $black-05;
   box-shadow: 4px 4px 10px 0 $black-05;
 }
