@@ -11,6 +11,11 @@
   flex-direction: column;
 }
 
+.book-main {
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .book-image {
   margin-right: 52px;
 }
@@ -62,13 +67,29 @@
   -webkit-transform: rotate(15deg);
   background: url('../assets/badge.png') no-repeat;
   background-size: 100%;
-  bottom: calc(100% - 115px);
+  bottom: calc(100% - 165px);
   content: '';
   transform: rotate(15deg);
   height: 110px;
-  left: calc(100% - 1050px);
+  right: calc(100% - 695px);
   position: absolute;
   width: 72px;
   z-index: 1;
+  }
+}
+
+.link-back {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  right: calc(100% - 300px);
+  width: 100%;
+}
+
+.link-back {
+  &::before {
+    content: url('../assets/back-arrow-20.png');
+    margin-right: 12px;
   }
 }
