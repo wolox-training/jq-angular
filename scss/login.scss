@@ -1,0 +1,66 @@
+.login-container {
+  background: $wild-sand;
+  border-top: 8px solid $cerulean;
+  font-family: 'Roboto', sans-serif;
+  max-width: 300px;
+  padding: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.login-image-logo {
+  align-self: center;
+  height: 70px;
+  width: 212px;
+  margin-bottom: 16px;
+}
+
+.login-label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  height: 32px;
+  margin-bottom: 16px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.login-input-password {
+  margin-bottom: 24px;
+}
+
+.btn-login {
+  background: $earls-green;
+  color: $white;
+  height: 32px;
+  margin-bottom: 34px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.btn-login {
+  &::after {
+    border-bottom: 2px solid $gray;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% - 74px);
+    max-width: 252px;
+    left: 24px;
+    width: 100%;
+  }
+}
+
+.btn-sign-up {
+  background: $wild-sand;
+  border: 1px solid $earls-green;
+  color: $earls-green;
+  height: 32px;
+  max-width: 252px;
+  width: 100%;
+}
