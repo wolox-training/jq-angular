@@ -1,3 +1,5 @@
+$break-medium: 1024px;
+
 .book-container {
   background-color: $white;
   font-family: 'Roboto', sans-serif;
@@ -20,7 +22,7 @@
   margin-right: 52px;
 }
 
-.book-info {
+.book-info-detail {
   width: 100%;
 }
 
@@ -91,5 +93,65 @@
   &::before {
     content: url('../assets/back-arrow-20.png');
     margin-right: 12px;
+  }
+}
+
+
+@media screen and (max-width: $break-medium) {
+  .book-main {
+    flex-direction: column-reverse;
+  }
+
+  .book-container {
+    flex-direction: column;
+    padding: 38px 18px 43px 18px;
+    margin-bottom: 20px;
+    max-width: 336px;
+  }
+
+  .book-cover {
+    height: 298px;
+    max-width: 212px;
+  }
+
+  .book-image {
+    align-self: center;
+    margin: 0 0 21px 0;
+  }
+
+  .book-title {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .book-gender {
+    font-size: 16px;
+  }
+
+  .book-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .book-property {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+
+  .link-back {
+    width: auto;
+  }
+
+  .text-2 {
+    font-size: $small-text;
+    line-height: 24px;
+  }
+
+  .book-image-container {
+    &::after {
+    bottom: calc(100% - 170px);
+    right: calc(100% - 620px);
+    width: 50px;
+    }
   }
 }
