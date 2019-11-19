@@ -1,3 +1,5 @@
+$break-medium: 1024px;
+
 .book-container {
   background-color: $white;
   font-family: 'Roboto', sans-serif;
@@ -95,7 +97,7 @@
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $break-medium) {
   .book-main {
     flex-direction: column-reverse;
   }
