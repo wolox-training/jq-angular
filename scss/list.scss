@@ -1,3 +1,5 @@
+$transform-scale: 1.1;
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -54,8 +56,8 @@
 
 .book {
   &:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1); 
+    -ms-transform: scale($transform-scale);
+    -webkit-transform: scale($transform-scale);
+    transform: scale($transform-scale); 
   }
 }

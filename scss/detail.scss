@@ -149,9 +149,9 @@ $break-medium: 1024px;
 
   .book-image-container {
     &::after {
-    bottom: calc(100% - 170px);
-    right: calc(100% - 620px);
-    width: 50px;
+      bottom: calc(100% - 170px);
+      right: calc(100% - 620px);
+      width: 50px;
     }
   }
 }
