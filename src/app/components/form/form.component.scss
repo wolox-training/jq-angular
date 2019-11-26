@@ -1,0 +1,93 @@
+@import '../../../colors';
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container {
+  background: $wild-sand;
+  border-top: 8px solid $cerulean;
+  font-family: 'Roboto', sans-serif;
+  max-width: 300px;
+  padding: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.signup-image-logo {
+  align-self: center;
+  height: 70px;
+  width: 212px;
+  margin-bottom: 16px;
+}
+
+.signup-label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.signup-input {
+  height: 32px;
+  margin-bottom: 16px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.signup-input-password {
+  margin-bottom: 24px;
+}
+
+.btn-signup {
+  background: $earls-green;
+  color: $white;
+  height: 32px;
+  margin-bottom: 34px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.btn-signup {
+  &::after {
+    border-bottom: 2px solid $gray;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% - 74px);
+    max-width: 252px;
+    left: 24px;
+    width: 100%;
+  }
+}
+
+.btn-login {
+  background: $wild-sand;
+  border: 1px solid $earls-green;
+  color: $earls-green;
+  height: 32px;
+  max-width: 252px;
+  width: 100%;
+}
+
+.alert {
+  animation: 2s alertAnim forwards;
+  display: inline-block;
+  font-size: .9em;
+  margin-bottom: 20px;
+  padding: 7px;
+  width: 100%;
+}
+
+@keyframes alertAnim {
+  from {
+      opacity:0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity:1;
+      transform: translateY(0);
+  }
+}
