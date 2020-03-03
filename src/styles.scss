@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import 'equalizer';
+@import 'colors';
+
+.main {
+  align-items: flex-start;
+  background-color: $wild-sand;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 4px 4px 10px 0 $black-05;
+  box-shadow: 4px 4px 10px 0 $black-05;
+}
+
+.border-radius-5 {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
